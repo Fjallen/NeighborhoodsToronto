@@ -8,4 +8,11 @@ https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/14190bd8-db71-4a43-8d5
 
 ### With Lat and Lon Coordinates
 
-# It is an ipynb file in the Github because I couldnt import Geocoder
+https://github.com/Fjallen/NeighborhoodsToronto/blob/master/Adding_Coordinates_To_Toronto_Neighborhoosd.ipynb
+
+### After Clustering 
+
+
+
+
+### Findings: There are a lot of East-Asian Neighborhoods, Seconded By Italian-esque Neighborhoods, The rest was more random
