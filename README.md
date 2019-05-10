@@ -1,4 +1,4 @@
-### Neighborhoods in Toronto
+# Neighborhoods in Toronto
 
 The Premise: Your family wants to move from where you currently live, but they don't want to move to a neighborhood that is very different
 because it's hard to get used to.
@@ -9,7 +9,7 @@ So what can we do? We can use clustering to find similar neighborhoods without a
 
 Without further ado, let's begin
 
-###  Step 1: Getting The Neighborhoods
+#  Step 1: Getting The Neighborhoods
 
 Luckily, Wikipedia has a list of Postal Codes with attached Neighborhoods. Why Postal Code? This way we can actually know where each neighborhood is located with future processing. The site: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 
@@ -24,7 +24,7 @@ https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/14190bd8-db71-4a43-8d5
 Now we have the Neighborhoods data and it looks like this
 https://github.com/Fjallen/NeighborhoodsToronto/blob/master/TorontoNeighborhoods.csv
 
-### Step 2: Getting Latitudes And Longitudes
+# Step 2: Getting Latitudes And Longitudes
 
 It isn't enough to just know the postal codes, we also need to have latitudes and longitudes to call most, if not all, APIs
 
@@ -39,9 +39,9 @@ I proceeded to simply merge the two tables based on Postal Code.
 To see this process:
 https://github.com/Fjallen/NeighborhoodsToronto/blob/master/Adding_Coordinates_To_Toronto_Neighborhoosd.ipynb
 
-# Note that if you follow the steps on the notebook on your own computer, there should be Maps. Github just doesn't render it.
+### Note that if you follow the steps on the notebook on your own computer, there should be Maps. Github just doesn't render it.
 
-### Step 3: Getting Features and Clustering 
+# Step 3: Getting Features and Clustering 
 
 Now that we have the Longitudes and Latitudes, we can work on getting features for each neighborhood.
 
@@ -60,7 +60,7 @@ We will be using K-Means Clustering to form the different clusters of similar ne
 
 And voila! We have groups of similar neighborhoods to consider moving to.
 
-# Note that the K (number of clusters) in the current notebook is 10, which is arbitrary and can be lowered, I simply moved from 3 to 10, by 1s to see how things changed.
+### Note that the K (number of clusters) in the current notebook is 10, which is arbitrary and can be lowered, I simply moved from 3 to 10, by 1s to see how things changed.
 
 To see this process:
 https://github.com/Fjallen/NeighborhoodsToronto/blob/master/Toronto_Neighborhood_Clustering.ipynb
@@ -68,7 +68,7 @@ https://github.com/Fjallen/NeighborhoodsToronto/blob/master/Toronto_Neighborhood
 The finished CSV: 
 https://github.com/Fjallen/NeighborhoodsToronto/blob/master/Clustered_Neighborhoods.csv
 
-### Findings
+# Findings
 
 It is quite difficult to actually save data as csv in Watson Studios.
 There was a large chunk of similar neighborhoods which I thought would disperse if I increased K, however, this was not the case
